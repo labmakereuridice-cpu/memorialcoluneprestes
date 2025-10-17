@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praça dos Girassóis - Imersivo 360°</title>
+    <meta name="description" content="Experiência imersiva 360° sobre a Praça dos Girassóis em Palmas-TO.">
+    <!-- Importa a biblioteca A-Frame -->
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <!-- Importa o componente de texto robusto que suporta acentuação -->
+    <script src="https://unpkg.com/aframe-troika-text/dist/aframe-troika-text.min.js"></script>
+    
+    <style>
+      /* Estilos para garantir que a cena 3D ocupe todo o viewport, especialmente no celular */
+      html, body {
+          width: 100%;
+          height: 100%;
+          margin: 0;
+          overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <a-scene>
+      
+      <!-- Fundo Imersivo 360 -->
+      <a-sky src="https://i.imgur.com/7VCZ8Q8.jpeg" rotation="0 -110 0"></a-sky>
+
+      <!-- Título Principal -->
+      <a-troika-text
+        value="Praça dos Girassóis - Palmas, TO"
+        color="#FFCC00"
+        align="center"
+        font-size="0.35"
+        anchor="center"
+        position="0 2.5 -4"
+        outline-color="#000000"
+        outline-width="3%">
+      </a-troika-text>
+
+      <!-- Painel 1 (Frente) - Rosa dos Ventos -->
+      <a-entity class="panel" position="0 1.2 -4" rotation="0 0 0">
+        <a-entity geometry="primitive: plane; width: 3.5; height: 1.8" material="color: #001f3f; opacity: 0.85; transparent: true;"></a-entity>
+        
+        <a-troika-text
+          value="A Rosa dos Ventos e o Centro Geodésico"
+          color="#FFCC00" 
+          align="center" 
+          font-size="0.18" 
+          anchor="center"
+          position="0 0.6 0.1">
+        </a-troika-text>
+        
+        <a-troika-text
+          value="O marco central da praça, a Rosa dos Ventos, é considerado o centro geodésico do Brasil. Representa o ponto de equilíbrio do território nacional."
+          color="#EFEFEF" 
+          align="center" 
+          font-size="0.11" 
+          anchor="center" 
+          max-width="3"
+          position="0 0 0.1">
+        </a-troika-text>
+      </a-entity>
+      
+      <!-- Painel 2 (Direita) - Três Poderes -->
+      <a-entity class="panel" position="4 1.2 0" rotation="0 -90 0">
+        <a-entity geometry="primitive: plane; width: 3.5; height: 1.8" material="color: #001f3f; opacity: 0.85; transparent: true;"></a-entity>
+        
+        <a-troika-text
+          value="Os Três Poderes Estaduais"
+          color="#FFCC00" 
+          align="center" 
+          font-size="0.18" 
+          anchor="center"
+          position="0 0.6 0.1">
+        </a-troika-text>
+        
+        <a-troika-text
+          value="A praça abriga os palácios Araguaia (Executivo), João de Jesus Santana (Legislativo) e o Tribunal de Justiça (Judiciário), formando o centro político do Tocantins."
+          color="#EFEFEF" 
+          align="center" 
+          font-size="0.11" 
+          anchor="center" 
+          max-width="3"
+          position="0 0 0.1">
+        </a-troika-text>
+      </a-entity>
+
+      <!-- Painel 3 (Esquerda) - Monumentos -->
+      <a-entity class="panel" position="-4 1.2 0" rotation="0 90 0">
+        <a-entity geometry="primitive: plane; width: 3.5; height: 1.8" material="color: #001f3f; opacity: 0.85; transparent: true;"></a-entity>
+        
+        <a-troika-text
+          value="Monumentos e Cultura Tocantinense"
+          color="#FFCC00" 
+          align="center" 
+          font-size="0.18" 
+          anchor="center"
+          position="0 0.6 0.1">
+        </a-troika-text>
+        
+        <a-troika-text
+          value="No entorno, encontramos marcos como o Relógio do Sol, a Fonte Luminosa, e o Cruzeiro. O local é palco de grandes eventos culturais e cívicos de Palmas."
+          color="#EFEFEF" 
+          align="center" 
+          font-size="0.11" 
+          anchor="center" 
+          max-width="3"
+          position="0 0 0.1">
+        </a-troika-text>
+      </a-entity>
+
+      <!-- Câmera com controles de movimento -->
+      <a-camera></a-camera>
+    </a-scene>
+  </body>
+</html>
