@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Praça dos Girassóis - Imersivo 360°</title>
-    <meta name="description" content="Experiência imersiva 360° sobre a Praça dos Girassóis em Palmas-TO.">
+    <title>Memorial Coluna Prestes - Imersivo 360°</title>
+    <meta name="description" content="Experiência imersiva 360° sobre o Memorial Coluna Prestes, projetado por Oscar Niemeyer em Palmas-TO.">
     <!-- Importa a biblioteca A-Frame -->
     <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
     <!-- Importa o componente de texto robusto que suporta acentuação -->
@@ -23,12 +23,12 @@
   <body>
     <a-scene>
       
-      <!-- Fundo Imersivo 360 -->
+      <!-- Fundo Imersivo 360 (Imagem da Praça dos Girassóis, onde o memorial está localizado) -->
       <a-sky src="https://i.imgur.com/7VCZ8Q8.jpeg" rotation="0 -110 0" crossorigin="anonymous"></a-sky>
 
-      <!-- Título Principal -->
+      <!-- Título Principal Atualizado -->
       <a-troika-text
-        value="Praça dos Girassóis - Palmas, TO"
+        value="Memorial Coluna Prestes - Palmas, TO"
         color="#FFCC00"
         align="center"
         font-size="0.35"
@@ -38,12 +38,12 @@
         outline-width="3%">
       </a-troika-text>
 
-      <!-- Painel 1 (Frente) - Rosa dos Ventos -->
+      <!-- Painel 1 (Frente) - A Arquitetura de Niemeyer -->
       <a-entity class="panel" position="0 1.2 -4" rotation="0 0 0">
         <a-entity geometry="primitive: plane; width: 3.5; height: 1.8" material="color: #001f3f; opacity: 0.85; transparent: true;"></a-entity>
         
         <a-troika-text
-          value="A Rosa dos Ventos e o Centro Geodésico"
+          value="O Projeto de Oscar Niemeyer"
           color="#FFCC00" 
           align="center" 
           font-size="0.18" 
@@ -52,7 +52,7 @@
         </a-troika-text>
         
         <a-troika-text
-          value="O marco central da praça, a Rosa dos Ventos, é considerado o centro geodésico do Brasil. Representa o ponto de equilíbrio do território nacional."
+          value="O memorial é uma das obras de Oscar Niemeyer em Tocantins. Sua estrutura cilíndrica e enviesada representa a marcha da Coluna Prestes, simbolizando sua jornada ininterrupta pelo Brasil."
           color="#EFEFEF" 
           align="center" 
           font-size="0.11" 
@@ -62,12 +62,12 @@
         </a-troika-text>
       </a-entity>
       
-      <!-- Painel 2 (Direita) - Três Poderes -->
+      <!-- Painel 2 (Direita) - História da Coluna Prestes -->
       <a-entity class="panel" position="4 1.2 0" rotation="0 -90 0">
         <a-entity geometry="primitive: plane; width: 3.5; height: 1.8" material="color: #001f3f; opacity: 0.85; transparent: true;"></a-entity>
         
         <a-troika-text
-          value="Os Três Poderes Estaduais"
+          value="Contexto Histórico: 1925-1927"
           color="#FFCC00" 
           align="center" 
           font-size="0.18" 
@@ -76,7 +76,7 @@
         </a-troika-text>
         
         <a-troika-text
-          value="A praça abriga os palácios Araguaia (Executivo), João de Jesus Santana (Legislativo) e o Tribunal de Justiça (Judiciário), formando o centro político do Tocantins."
+          value="Liderada por Luís Carlos Prestes, a Coluna percorreu cerca de 25.000 km, protestando contra a Primeira República e exigindo o voto secreto e a reforma do ensino. Foi um marco na luta por justiça social no Brasil."
           color="#EFEFEF" 
           align="center" 
           font-size="0.11" 
@@ -86,12 +86,12 @@
         </a-troika-text>
       </a-entity>
 
-      <!-- Painel 3 (Esquerda) - Monumentos -->
+      <!-- Painel 3 (Esquerda) - O Interior do Memorial -->
       <a-entity class="panel" position="-4 1.2 0" rotation="0 90 0">
         <a-entity geometry="primitive: plane; width: 3.5; height: 1.8" material="color: #001f3f; opacity: 0.85; transparent: true;"></a-entity>
         
         <a-troika-text
-          value="Monumentos e Cultura Tocantinense"
+          value="Acervo e Exposição Permanente"
           color="#FFCC00" 
           align="center" 
           font-size="0.18" 
@@ -100,7 +100,7 @@
         </a-troika-text>
         
         <a-troika-text
-          value="No entorno, encontramos marcos como o Relógio do Sol, a Fonte Luminosa, e o Cruzeiro. O local é palco de grandes eventos culturais e cívicos de Palmas."
+          value="Dentro do Memorial, o visitante encontra painéis, fotos e documentos que narram a trajetória e a ideologia dos membros da Coluna. É um espaço dedicado à memória política do Tocantins e do país."
           color="#EFEFEF" 
           align="center" 
           font-size="0.11" 
